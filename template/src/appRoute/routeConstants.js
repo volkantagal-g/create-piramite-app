@@ -1,6 +1,5 @@
 const ROUTE_PATHS = {
-  HELLO_WORLD: '/Desktop/HelloWorld',
-  DENEME: '/Desktop/Deneme'
+  HELLO_WORLD: '/Desktop/HelloWorld'
 };
 
 export default ROUTE_PATHS;

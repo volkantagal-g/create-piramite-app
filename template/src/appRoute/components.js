@@ -10,14 +10,6 @@ const COMPONENTS = {
     status: 'dev',
     isMobileFragment: false,
     isPreviewQuery: false
-  },
-  [ROUTE_PATHS.DENEME]: {
-    fragment: Deneme,
-    fragmentName: 'Deneme',
-    name: 'DENEME',
-    status: 'dev',
-    isMobileFragment: false,
-    isPreviewQuery: false
   }
 };
 

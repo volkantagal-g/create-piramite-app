@@ -13,9 +13,9 @@ module.exports = {
   isCssClassNameObfuscationEnabled: false,
   sfBaseUrl: `http://localhost:${port}`,
   services: {
-    'voltranapi': {
-      'clientUrl': 'http://voltran-api.qa.hepsiburada.com',
-      'serverUrl': 'http://voltran-api.qa.hepsiburada.com'
+    'piramiteapi': {
+      'clientUrl': 'http://piramite-api.qa.getir.com',
+      'serverUrl': 'http://piramite-api.qa.getir.com'
     }
   },
   timeouts: {

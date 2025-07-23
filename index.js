@@ -111,13 +111,24 @@ async function copyTemplateFiles(projectPath) {
   // src klasörünü recursive ve eksiksiz kopyala
   const srcSourcePath = path.join(sourceDir, 'src');
   const srcDestPath = path.join(projectPath, 'src');
+  
   if (fs.existsSync(srcSourcePath)) {
-    await fs.copy(srcSourcePath, srcDestPath, {
-      filter: (src) => {
-        // Sadece node_modules ve .DS_Store'u hariç tut
-        return !src.includes('node_modules') && !src.includes('.DS_Store');
+    console.log(chalk.blue('Copying src directory...'));
+    try {
+      // Önce hedef klasörü temizle (eğer varsa)
+      if (fs.existsSync(srcDestPath)) {
+        await fs.remove(srcDestPath);
       }
-    });
+      
+      // src klasörünü tamamen kopyala
+      await fs.copy(srcSourcePath, srcDestPath);
+      console.log(chalk.green('✓ src directory copied successfully'));
+    } catch (error) {
+      console.error(chalk.red('Error copying src directory:'), error.message);
+      throw error;
+    }
+  } else {
+    console.warn(chalk.yellow('Warning: src directory not found in template'));
   }
 }
 
