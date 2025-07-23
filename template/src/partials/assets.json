@@ -1,0 +1,24 @@
+{
+  "client": {
+    "js": "/project/assets/client-09623d3974bc01104eb6.js"
+  },
+  "DesktopHelloWorld": {
+    "js": "/project/assets/DesktopHelloWorld-09623d3974bc01104eb6.js"
+  },
+  "DesktopDeneme": {
+    "js": "/project/assets/DesktopDeneme-09623d3974bc01104eb6.js"
+  },
+  "": {
+    "png": [
+      "/project/assets/../../images/piramite.png",
+      "/project/assets/../../images/voltran.png"
+    ],
+    "dsStore": "/project/assets/../../.DS_Store",
+    "svg": [
+      "/project/assets/../../images/logo.svg",
+      "/project/assets/../../images/heart.svg",
+      "/project/assets/../../images/heart-active.svg"
+    ],
+    "scss": "/project/assets/../../styles/global.scss"
+  }
+}

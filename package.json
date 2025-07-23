@@ -1,0 +1,28 @@
+{
+    "name": "create-piramite-app",
+    "version": "1.0.0",
+    "description": "Create a new PiramiteJS application with ease",
+    "main": "index.js",
+    "bin": {
+      "create-piramite-app": "./index.js"
+    },
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+      "piramitejs",
+      "create-app",
+      "cli",
+      "scaffold"
+    ],
+    "author": "Volkan Tağal",
+    "license": "MIT",
+    "dependencies": {
+      "chalk": "^4.1.2",
+      "commander": "^11.0.0",
+      "fs-extra": "^11.1.1",
+      "inquirer": "^8.2.6",
+      "ora": "^5.4.1"
+    }
+  }
+  

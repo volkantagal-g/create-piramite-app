@@ -1,0 +1,24 @@
+{
+  "name": "my-piramite-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "lint": "npm run eslint && npm run prettier",
+    "eslint": "eslint 'src/**/*.js' --fix",
+    "prettier": "prettier --write 'src/**/*.{js,scss}' --config .prettierrc.json",
+    "dev": "piramite --config ./piramite-app.config.js --dev",
+    "serve": "piramite --config ./piramite-app.config.js",
+    "test": "jest",
+    "test:watchAll": "jest --watchAll",
+    "test:coverage": "jest --coverage",
+    "test:updateSnapshot": "jest --updateSnapshot",
+    "version": "auto-changelog"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "piramitejs": "^1.0.0",
+    "@svgr/webpack": "^6.5.1"
+  }
+}
